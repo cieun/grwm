@@ -1,0 +1,65 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    overflow-y: hidden;
+}
+
+div{
+    width: 100%;
+    height: 100%;
+}
+
+#chu1{
+    width: 60%;
+    position: absolute;
+    right: 0%;
+    top:-10%;
+}
+
+#chu2{
+    height: 90%;
+    position: absolute;
+    left: 7%;
+    top: 5%;
+}
+
+#chu3{
+    height: 300%;
+    position: absolute;
+    left:-5%;
+    top: 0%;
+
+    animation: elevator 15s linear infinite;
+}
+
+#grwm{
+    height: 30vh;
+    position: absolute;
+    right:0%;
+    bottom: 0%;
+
+    animation: blink 0.8s steps(1, start) infinite;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+@keyframes elevator {
+    from{
+        top: 100%;
+    }
+    to{
+        top: -280%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
